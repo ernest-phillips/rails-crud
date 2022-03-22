@@ -1,2 +1,4 @@
-<h1>Dogs#show</h1>
-<p>Find me in app/views/dogs/show.html.erb</p>
+<h1><%= @dog.name %></h1>
+<p>"<%= @dog.motto %>"</p>
+
+<%= link_to 'Remove', @dog, method: :delete, data: { confirm: 'Are you sure?' } %>
